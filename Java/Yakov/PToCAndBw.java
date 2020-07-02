@@ -8,7 +8,7 @@ public class PToCAndBw {
         z = z0; //false is Cartesian, true is polar
     }
 
-    private void CtoP(){
+    private void CtoP(){ //convert Carthesian to Polar
         if (!z) {
             double l = Math.sqrt(x * x + y * y);
             double angle = Math.signum(y) * Math.acos(x / l);
@@ -17,7 +17,7 @@ public class PToCAndBw {
             z = true;
         }
     }
-    private void PtoC(){
+    private void PtoC(){ //convert Polar to Carthesian
         if (z) {
             double x1 = Math.cos(y * Math.PI / 180) * x;
             double y1 = Math.sin(y * Math.PI / 180) * x;
@@ -27,14 +27,14 @@ public class PToCAndBw {
         }
     }
 
-    public double getCx(){
+    public double getCx(){ //get Cathesian x
         if (z){
             PtoC();
         }
         return x;
     }
 
-    public double getCy(){
+    public double getCy(){ //get Carthesian y
         if (z){
             PtoC();
         }
@@ -42,7 +42,7 @@ public class PToCAndBw {
     }
 
 
-    public double getPr(){
+    public double getPr(){  //get Polar length
         if (!z){
             CtoP();
         }
@@ -50,7 +50,7 @@ public class PToCAndBw {
     }
 
 
-    public double getPAn(){
+    public double getPAn(){ //get Polar radius
         if (!z){
             CtoP();
         }
