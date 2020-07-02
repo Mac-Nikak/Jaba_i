@@ -2,9 +2,9 @@
 public class PToCAndBw {
     private double x,y;
     private boolean z;
-    public PToCAndBw(boolean z0, double x0, double y0){
-        x = x0;
-        y = y0;
+    public PToCAndBw(boolean z0, double xOrLength, double yOrAngle){
+        x = xOrLength;
+        y = yOrAngle;
         z = z0; //false is Cartesian, true is polar
     }
 
