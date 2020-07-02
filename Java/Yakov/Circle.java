@@ -6,6 +6,9 @@ public class Circle {
        System.out.println(in.getCy());
        System.out.println(in.getPr());
        System.out.println(in.getPAn());
-
+       System.out.println(in.getCx());
+       System.out.println(in.getCy());
+       System.out.println(in.getPr());
+       System.out.println(in.getPAn());
    }
 }

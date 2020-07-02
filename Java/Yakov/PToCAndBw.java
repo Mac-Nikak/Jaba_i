@@ -1,4 +1,3 @@
-
 public class PToCAndBw {
     private double x,y;
     private boolean z;
