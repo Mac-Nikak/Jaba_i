@@ -1,13 +1,13 @@
-public class PToCAndBw {
+public class PolarToCartesianAndBackwards {
     private double x,y;
     private boolean z;
-    public PToCAndBw(boolean z0, double xOrLength, double yOrAngle){
+    public PolarToCartesianAndBackwards(boolean z0, double xOrLength, double yOrAngle){
         x = xOrLength;
         y = yOrAngle;
         z = z0; //false is Cartesian, true is polar
     }
 
-    private void CtoP(){ //convert Cartesian to Polar
+    private void cartesiantopolar(){ //convert Cartesian to Polar
         if (!z) {
             double l = Math.sqrt(x * x + y * y);
             double angle = Math.signum(y) * Math.acos(x / l);
@@ -16,7 +16,7 @@ public class PToCAndBw {
             z = true;
         }
     }
-    private void PtoC(){ //convert Polar to Cartesian
+    private void polartocarthesian(){ //convert Polar to Cartesian
         if (z) {
             double x1 = Math.cos(y * Math.PI / 180) * x;
             double y1 = Math.sin(y * Math.PI / 180) * x;
@@ -28,14 +28,14 @@ public class PToCAndBw {
 
     public double getCx(){ //get Cartesian x
         if (z){
-            PtoC();
+            polartocarthesian();
         }
         return x;
     }
 
     public double getCy(){ //get Cartesian y
         if (z){
-            PtoC();
+            polartocarthesian();
         }
         return y;
     }
@@ -43,7 +43,7 @@ public class PToCAndBw {
 
     public double getPr(){  //get Polar length
         if (!z){
-            CtoP();
+            cartesiantopolar();
         }
         return x;
     }
@@ -51,7 +51,7 @@ public class PToCAndBw {
 
     public double getPAn(){ //get Polar radius
         if (!z){
-            CtoP();
+            cartesiantopolar();
         }
         return y;
     }
