@@ -26,14 +26,14 @@ public class PolarToCartesianAndBackwards {
         }
     }
 
-    public double getCx(){ //get Cartesian x
+    public double getCartesianX(){ //get Cartesian x
         if (z){
             polartocarthesian();
         }
         return x;
     }
 
-    public double getCy(){ //get Cartesian y
+    public double getCartesianY(){ //get Cartesian y
         if (z){
             polartocarthesian();
         }
@@ -41,7 +41,7 @@ public class PolarToCartesianAndBackwards {
     }
 
 
-    public double getPr(){  //get Polar length
+    public double getPolarRadius(){  //get Polar length
         if (!z){
             cartesiantopolar();
         }
@@ -49,7 +49,7 @@ public class PolarToCartesianAndBackwards {
     }
 
 
-    public double getPAn(){ //get Polar radius
+    public double getPolarAngle(){ //get Polar radius
         if (!z){
             cartesiantopolar();
         }
