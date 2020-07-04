@@ -1,14 +1,14 @@
+import java.util.Scanner;
+
 public class Circle {
    public static void main(String[] args){
-       double x = 1, y =1;
-       PToCAndBw in = new PToCAndBw(true,Math.sqrt(2),135);
-       System.out.println(in.getCx());
-       System.out.println(in.getCy());
-       System.out.println(in.getPr());
-       System.out.println(in.getPAn());
-       System.out.println(in.getCx());
-       System.out.println(in.getCy());
-       System.out.println(in.getPr());
-       System.out.println(in.getPAn());
+       Scanner in = new Scanner(System.in);
+       double r = in.nextDouble();
+       int frac = in.nextInt();
+       PolarToCartesianAndBackwards tr;
+       for(int angle = 180; angle >= -180; angle -= 360/frac){
+           tr = new PolarToCartesianAndBackwards(true, r, angle);
+           System.out.printf("(%f, %f) %n", tr.getCx(), tr.getCy());
+       }
    }
 }
