@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Java/Yakov" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java/Maxim" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java/Maxim/Prehistoric" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java/Maxim/While-loop" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
