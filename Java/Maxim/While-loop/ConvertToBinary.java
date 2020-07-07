@@ -3,9 +3,12 @@ import java.util.Scanner;
 public class ConvertToBinary {
     public static void main(String[] args){
         Scanner keyboard = new Scanner(System.in);
-        System.out.print("Enter number which to convert to binary: ");
-        int x = keyboard.nextInt();
-        System.out.print(binary(x));
+        int x;
+        do {
+            System.out.print("Enter number which to convert to binary: ");
+            x = keyboard.nextInt();
+            System.out.printf("Number %d in binary is %s%n", x, binary(x));
+        }while (x >= 0);
     }
 
     public static String binary(int x){
