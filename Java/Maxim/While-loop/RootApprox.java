@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class RootApprox {
-    final static double  SMALL = 0.0000000000000001;
+    final static double  SMALL = 0.000000000000001;
     public static void main(String[] args){
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Enter number: ");
-        double num = keyboard.nextDouble();
-        System.out.printf("Your approximate root is equal %.50f", approximateRoot(num));
+        double num = keyboard.nextFloat();
+        System.out.printf("Your approximate root is equal %.20f%n", approximateRoot(num));
     }
 
     public static double approximateRoot(double n){
@@ -25,6 +25,10 @@ public class RootApprox {
             }
 
             i++;
+            if(i > 1000000000) {
+                i = 0;
+                System.out.printf("%.25f%n",root);
+            }
         }while(Math.abs(diff) > SMALL);
         return root;
     }

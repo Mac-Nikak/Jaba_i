@@ -8,6 +8,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java/Maxim/Prehistoric" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java/Maxim/While-loop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java/Maxim/Arrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java/Maxim/ClassFile" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java/Maxim/ElementsOfOOP" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
