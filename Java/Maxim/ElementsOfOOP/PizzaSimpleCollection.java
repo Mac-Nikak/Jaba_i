@@ -58,5 +58,17 @@ public class PizzaSimpleCollection {
         {
             newdata[i-1] = pizzaList[i];
         }
+        this.pizzaList = newdata;
+    }
+
+    public void view()
+    {
+        System.out.println("*---------------------------------*");
+        for(int i = 0; i < pizzaList.length; i++)
+        {
+            System.out.printf("%3d Name: %12s Price: %4.2f%n", i, pizzaList[i].getName()
+                    ,pizzaList[i].getPrice() );
+        }
+        System.out.println("*---------------------------------*");
     }
 }
